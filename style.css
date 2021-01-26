@@ -1,0 +1,7 @@
+.main-page{
+  background-image: url("images/background.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 10%;
+  height: 500px;
+}
