@@ -16,7 +16,7 @@
     <div class="header p-5 text-center">
       <h1 class="text-white">Welcome to Pioneer Bank</h1>
     </div>
-    <form class="w-75 mx-auto">
+    <div class="w-75 mx-auto">
       <div class="container">
         <div class="mb-3">
           <label for="exampleInputEmail1" class="form-label text-white">Email address</label>
@@ -33,12 +33,53 @@
         </div>
         <button type="submit" class="btn btn-success" id="login-btn">Submit</button>
       </div>
-    </form>
+    </div>
   </div>
   <div class="container" id="transaction-area">
-    <h1>Transaction area</h1>
-    <p>Enter amout</p>
+    <div class="row">
+      <div class="col-md-4">
+        <div class="deposit status p-3">
+          <h2>Deposit</h2>
+        <h5>$<span id="depositValue">0</span></h5>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="withdraw status p-3">
+          <h2>Withdraw</h2>
+          <h5>$ <span id="withdrawAmount">0</span></h5>
+        </div>
+      </div>
+      <div class="col-md-4">
+       <div class="balance status p-3">
+        <h2>Balance</h2>
+        <h5>$<span id="balanceAmount">300</span></h5>
+       </div>
+      </div>
+    </div>
+    <div class="row mt-5">
+      <div class="col-sm-6">
+        <div class="card shadow">
+          <div class="card-body">
+            <h5 class="card-title p-2">Deposit</h5>
+            <input type="number" name="" id="depositNum" placeholder="Enter your amount" class="m-2">
+            <br>
+            <button class="btn btn-success m-2" id="addDeposit">Submit</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6">
+        <div class="card shadow">
+          <div class="card-body">
+            <h5 class="card-title p-2">Withdraw</h5>
+            <input type="number" name="" id="withdrawAmountInput" placeholder="Enter your amount" class="m-2">
+            <br>
+            <button class="btn btn-success m-2" id="withdraw">Submit</button>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
+  
   <!-- bootstrap js -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
   <!-- javascript link -->

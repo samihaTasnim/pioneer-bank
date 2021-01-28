@@ -6,6 +6,23 @@
   height: 500px;
 }
 
-#transaction-area {
+/* #transaction-area {
   display: none;
+} */
+
+.deposit {
+  background-color: cornflowerblue;
+}
+
+.withdraw {
+  background-color: salmon;
+}
+
+.balance {
+  background-color: steelblue;
+}
+
+.status {
+  margin: 40% 5% 5% 5%;
+  border-radius: 7px;
 }
